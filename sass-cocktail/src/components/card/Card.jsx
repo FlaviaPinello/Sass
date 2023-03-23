@@ -1,10 +1,10 @@
-import "./index.scss";
+import styles from "./index.module.scss";
 
 const Card = ({ data }) => {
   return (
-    <div className="Card">
+    <div className={styles.Card}>
       <img src={data.strDrinkThumb} alt={data.strDrink} />
-      <div className="Card__text">
+      <div className={styles.text}>
         <h2>{data.strDrink}</h2>
         <ul>
           <li>{data.strIngredient1}</li>

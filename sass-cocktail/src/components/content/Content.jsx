@@ -1,9 +1,8 @@
 import Card from "../card";
-import "./index.scss";
-
+import styles from "./index.module.scss";
 const Content = ({ data }) => {
   return (
-    <div className="Content">
+    <div className={styles.Content}>
       {data.map((cocktail) => (
         <Card data={cocktail} />
       ))}

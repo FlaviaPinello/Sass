@@ -1,8 +1,9 @@
-import "./index.scss";
+import styles from "./index.module.scss";
 
 const Navbar = () => {
   return (
-    <div className="Navbar">
+    
+    <div className={styles.Navbar}>
       <ul>
         <li>Home</li>
         <li>About</li>
@@ -13,7 +14,7 @@ const Navbar = () => {
         src="https://purepng.com/public/uploads/large/purepng.com-cocktailcocktaildrinkgeneric-alcoholic-mixed-drinkbeverage-1411527240706fzrjn.png"
         alt="logo"
       />
-      <button>prenota</button>
+      <button>ordina</button>
     </div>
   );
 };
